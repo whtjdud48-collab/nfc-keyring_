@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>랜덤 캐릭터 영상</title>
+</head>
+<body>
+    <script>
+        // 구글 드라이브에서 만든 직링크 5개를 아래에 넣으세요
+        const videos = [
+            'https://drive.google.com/uc?export=download&id=1FXg9UmEGbgkDRuTIgc7Tylwe-QDVS-UM',
+            'https://drive.google.com/uc?export=download&id=1uNiYiacqSmt0UA_DPdJ4zAreOXidhwCp',
+            'https://drive.google.com/uc?export=download&id=1CFNw5Qv80j3nqQw6NWiKSF1Y4dr1XRtC',
+        ];
+
+        // 랜덤 선택 후 이동
+        const randomVideo = videos[Math.floor(Math.random() * videos.length)];
+        window.location.replace(randomVideo);
+    </script>
+</body>
+</html>
